@@ -6,9 +6,24 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> np.random.seed(8);
-          >>> one_sample_mean(salaries, 'salary', 100)
-          76699.82860000001
+          >>> ak_mn.num_rows
+          44
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> ak_mn.column("Murder rate in Alaska").item(0) 
+          10.19999981
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> ak_mn.column("Murder rate in Minnesota").item(0)
+          1.200000048
           """,
           'hidden': False,
           'locked': False
