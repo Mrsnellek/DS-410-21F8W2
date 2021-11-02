@@ -1,12 +1,12 @@
 test = {
-  'name': 'q2_4',
+  'name': 'q2_2_3',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> 1 <= restaurants_tied <= 3
+          >>> isinstance(compute_framingham_test_statistic(framingham), (float, int, np.integer))
           True
           """,
           'hidden': False,

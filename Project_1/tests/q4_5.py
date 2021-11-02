@@ -1,12 +1,20 @@
 test = {
-  'name': 'q2_4',
+  'name': 'q4_5',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> 1 <= restaurants_tied <= 3
+          >>> summed_mn_hazard_data.num_rows == 2
+          True
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> len(summed_mn_hazard_data.labels) == 4
           True
           """,
           'hidden': False,

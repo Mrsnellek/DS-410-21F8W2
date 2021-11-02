@@ -6,23 +6,7 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> len(example_estimates) == 10000
-          True
-          """,
-          'hidden': False,
-          'locked': False
-        },
-        {
-          'code': r"""
-          >>> 850 < np.mean(example_estimates) < 1100
-          True
-          """,
-          'hidden': False,
-          'locked': False
-        },
-        {
-          'code': r"""
-          >>> np.count_nonzero(np.diff(example_estimates)) >= 1
+          >>> 1000 <= true_percentage_intervals <= 10000
           True
           """,
           'hidden': False,

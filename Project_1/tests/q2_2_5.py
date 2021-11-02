@@ -1,12 +1,12 @@
 test = {
-  'name': 'q2_4',
+  'name': 'q2_2_5',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> 1 <= restaurants_tied <= 3
+          >>> len(framingham_simulated_stats) == 100
           True
           """,
           'hidden': False,

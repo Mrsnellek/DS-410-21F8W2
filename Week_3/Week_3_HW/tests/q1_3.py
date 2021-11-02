@@ -6,15 +6,7 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> type(max_estimate) in set([int, np.int32, np.int64])
-          True
-          """,
-          'hidden': False,
-          'locked': False
-        },
-        {
-          'code': r"""
-          >>> max_estimate in observations.column(0)
+          >>> 40 <= imm_lower_bound <= imm_upper_bound <= 60
           True
           """,
           'hidden': False,

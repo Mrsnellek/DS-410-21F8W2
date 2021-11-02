@@ -1,12 +1,12 @@
 test = {
-  'name': 'q2_4',
+  'name': 'q1_3',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> 1 <= restaurants_tied <= 3
+          >>> all(disease_trend_explanation >= 1) and all(disease_trend_explanation <= 6)
           True
           """,
           'hidden': False,

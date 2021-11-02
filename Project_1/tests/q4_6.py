@@ -1,12 +1,12 @@
 test = {
-  'name': 'q2_4',
+  'name': 'q4_6',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> 1 <= restaurants_tied <= 3
+          >>> type(death_rate_observed_statistic) in set([float, np.float64])
           True
           """,
           'hidden': False,

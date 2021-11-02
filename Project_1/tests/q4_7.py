@@ -1,12 +1,20 @@
 test = {
-  'name': 'q2_4',
+  'name': 'q4_7',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> 1 <= restaurants_tied <= 3
+          >>> type(our_p_value) in set([float, np.float64])
+          True
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> 0 < our_p_value < 1
           True
           """,
           'hidden': False,

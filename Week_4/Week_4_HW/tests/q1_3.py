@@ -1,12 +1,20 @@
 test = {
-  'name': 'q2_4',
+  'name': 'q1_3',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> 1 <= restaurants_tied <= 3
+          >>> type(max_estimate) in set([int, np.int32, np.int64])
+          True
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> max_estimate in observations.column(0)
           True
           """,
           'hidden': False,

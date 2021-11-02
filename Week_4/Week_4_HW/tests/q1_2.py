@@ -1,13 +1,21 @@
 test = {
-  'name': 'q2_4',
+  'name': 'q1_2',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> 1 <= restaurants_tied <= 3
+          >>> mean_based_estimator(np.array([1, 2, 3])) is not None
           True
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> int(np.round(mean_based_estimator(np.array([1, 2, 3]))))
+          4
           """,
           'hidden': False,
           'locked': False

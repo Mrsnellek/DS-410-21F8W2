@@ -1,12 +1,12 @@
 test = {
-  'name': 'q2_4',
+  'name': 'q3_2_1',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> 1 <= restaurants_tied <= 3
+          >>> type(good_ts) in set([np.ndarray, list])
           True
           """,
           'hidden': False,

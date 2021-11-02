@@ -6,7 +6,7 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> 1 <= restaurants_tied <= 3
+          >>> 118 < np.mean(bootstrap_mean_based_estimates) < 126
           True
           """,
           'hidden': False,

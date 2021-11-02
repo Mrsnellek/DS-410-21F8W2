@@ -1,12 +1,12 @@
 test = {
-  'name': 'q1_1',
+  'name': 'q3_1_5',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> type(one_resampled_percentage(votes)) in set([float, np.float64]) 
+          >>> 0 < min(bootstrap_rrs) <= max(bootstrap_rrs) < 1
           True
           """,
           'hidden': False,
@@ -14,7 +14,8 @@ test = {
         },
         {
           'code': r"""
-          >>> 35 <= one_resampled_percentage(votes) <= 65
+          >>> np.random.seed(123);
+          >>> np.isclose(round(one_bootstrap_rr(), 3), 0.451)
           True
           """,
           'hidden': False,

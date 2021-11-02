@@ -1,12 +1,12 @@
 test = {
-  'name': 'q2_4',
+  'name': 'q1_1',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> 1 <= restaurants_tied <= 3
+          >>> type(all_unique_causes) in [np.ndarray, list]
           True
           """,
           'hidden': False,

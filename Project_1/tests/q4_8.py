@@ -1,12 +1,12 @@
 test = {
-  'name': 'q2_4',
+  'name': 'q4_8',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> 1 <= restaurants_tied <= 3
+          >>> reject_null in make_array(True, False)
           True
           """,
           'hidden': False,

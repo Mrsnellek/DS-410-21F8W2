@@ -1,12 +1,20 @@
 test = {
-  'name': 'q2_4',
+  'name': 'q1_1',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> 1 <= restaurants_tied <= 3
+          >>> N == "parameter" or N == "statistic"
+          True
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> N_estimate == "parameter" or N_estimate == "statistic"
           True
           """,
           'hidden': False,

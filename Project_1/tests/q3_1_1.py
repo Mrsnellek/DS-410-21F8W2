@@ -1,12 +1,14 @@
 test = {
-  'name': 'q1_1',
+  'name': 'q3_1_1',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> type(one_resampled_percentage(votes)) in set([float, np.float64]) 
+          >>> # Make sure your array only contains the integers that correspond;
+          >>> # to the correct options, you don't need to calculate each value;
+          >>> sum(nhs_true_statements % 1) == 0
           True
           """,
           'hidden': False,
@@ -14,7 +16,7 @@ test = {
         },
         {
           'code': r"""
-          >>> 35 <= one_resampled_percentage(votes) <= 65
+          >>> min(nhs_true_statements) >= 1 and max(nhs_true_statements <= 6)
           True
           """,
           'hidden': False,

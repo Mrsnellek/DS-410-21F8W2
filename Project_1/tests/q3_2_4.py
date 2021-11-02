@@ -1,12 +1,12 @@
 test = {
-  'name': 'q2_4',
+  'name': 'q3_2_4',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> 1 <= restaurants_tied <= 3
+          >>> type(HERS_pval) in set([float, np.float64])
           True
           """,
           'hidden': False,

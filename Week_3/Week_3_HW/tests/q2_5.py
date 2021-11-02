@@ -6,7 +6,7 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> max(bootstrap_max_estimates) <= 135
+          >>> 1 <= cutoff_one_percent <= 3
           True
           """,
           'hidden': False,

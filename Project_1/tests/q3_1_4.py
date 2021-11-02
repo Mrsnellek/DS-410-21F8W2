@@ -1,12 +1,20 @@
 test = {
-  'name': 'q2_4',
+  'name': 'q3_1_4',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> 1 <= restaurants_tied <= 3
+          >>> type(relative_risk(NHS)) in set([float, np.float64])
+          True
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> np.isclose(round(float(relative_risk(NHS)), 3)- 0.474, 0)
           True
           """,
           'hidden': False,
